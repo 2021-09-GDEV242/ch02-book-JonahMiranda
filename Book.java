@@ -34,4 +34,17 @@ class Book
     {
     return title;
     }
+    
+    /**
+     * These methods satisfy the requirement of 2.84
+     */
+    public void printAuthor()
+    {
+    System.out.println(author);
+    }
+    
+    public void printTitle()
+    {
+    System.out.println(title);
+    }
 }
