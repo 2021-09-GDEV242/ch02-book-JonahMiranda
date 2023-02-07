@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String refNumber;
 
     /**
      * Set the author and title fields when this object
@@ -22,6 +23,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
 
     /**
@@ -58,7 +60,7 @@ class Book
     System.out.println(title);
     }
     /**
-     * These methods satisfy the requirement of 2.87
+     * These method satisfies the requirement of 2.87
      */
     public void printDetails()
     {
@@ -66,8 +68,20 @@ class Book
     System.out.println("Author: " + author);
     System.out.println("Pages: " + pages);   
     }
-
+    
+    /**
+     * This method satisfies the requirement of 2.88
+     */
+    public void setRefNumber(String ref)
+    {
+    refNumber = ref; 
+    }
+    public String getRefNumber()
+    {
+    return refNumber;
+    }
 }
+    
     /**
      * 2.86 - My objects are immutable. I know this because 
      * none of my methods can change any of the field 
