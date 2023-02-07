@@ -14,19 +14,27 @@ class Book
     private int pages;
     private String refNumber;
     private int borrowed;
-
+    private boolean courseText;
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, boolean
+    bookCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+        courseText = bookCourseText;
     }
-
+    /**
+     * This method satifies the requirement of 2.92
+     */
+    public boolean isCourseText()
+    {
+    return courseText;
+    }
     /**
      * These methods satisfy the requirement of 2.83
      */
@@ -89,7 +97,7 @@ class Book
     return borrowed;
     }
     /**
-     * These method satisfies the requirement of 2.87
+     * These method satisfies the requirement of 2.87 and 2.91
      */
     public void printDetails()
     {
