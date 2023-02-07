@@ -60,16 +60,6 @@ class Book
     System.out.println(title);
     }
     /**
-     * These method satisfies the requirement of 2.87
-     */
-    public void printDetails()
-    {
-    System.out.println("Title: " + title);
-    System.out.println("Author: " + author);
-    System.out.println("Pages: " + pages);   
-    }
-    
-    /**
      * This method satisfies the requirement of 2.88
      */
     public void setRefNumber(String ref)
@@ -80,8 +70,26 @@ class Book
     {
     return refNumber;
     }
-}
     
+    /**
+     * These method satisfies the requirement of 2.87
+     */
+    public void printDetails()
+    {
+    System.out.println("Title: " + title);
+    System.out.println("Author: " + author);
+    System.out.println("Pages: " + pages);
+    
+    if(refNumber.length() > 0)
+        {
+        System.out.println("Reference Number =" + refNumber);
+        }
+    else
+        {
+        System.out.println("Reference Number = ZZZ");
+        }
+    }
+}
     /**
      * 2.86 - My objects are immutable. I know this because 
      * none of my methods can change any of the field 
