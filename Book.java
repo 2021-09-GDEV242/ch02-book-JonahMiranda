@@ -57,10 +57,21 @@ class Book
     {
     System.out.println(title);
     }
-}
+    /**
+     * These methods satisfy the requirement of 2.87
+     */
+    public void printDetails()
+    {
+    System.out.println("Title: " + title);
+    System.out.println("Author: " + author);
+    System.out.println("Pages: " + pages);   
+    }
 
-/**
- * 2.86 - My objects are immutable. I know this because 
- * none of my methods can change any of the field 
- * variables 
- */
+}
+    /**
+     * 2.86 - My objects are immutable. I know this because 
+     * none of my methods can change any of the field 
+     * variables 
+     */
+    
+    
