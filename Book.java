@@ -60,11 +60,18 @@ class Book
     System.out.println(title);
     }
     /**
-     * This method satisfies the requirement of 2.88
+     * This method satisfies the requirement of 2.88 and 2.90
      */
     public void setRefNumber(String ref)
     {
-    refNumber = ref; 
+    if(ref.length() >= 3)
+    {
+        refNumber = ref;
+    }
+    else
+    {
+        System.out.println("ERROR: Ref Number is less than 3"); 
+    }
     }
     public String getRefNumber()
     {
